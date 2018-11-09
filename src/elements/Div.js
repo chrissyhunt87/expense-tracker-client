@@ -27,3 +27,11 @@ export const BlackoutDiv = styled.div`
     background-color: #000;
     opacity: 0.4;
 `;
+
+export const HeaderDiv = styled.div`
+    width: 100%;
+    height: 15%;
+    max-height: 50px;
+    background-color: ${props => props.withinBudget ? 'green' : 'red'};
+    color: #FFF;
+`;
