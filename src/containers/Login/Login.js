@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { CenteredDiv } from '../../elements/Div';
 import { FormInput } from '../../elements/Input';
 import { SubmitButton } from '../../elements/Button';
+import { FormLabel } from '../../elements/Text';
 
 class Login extends Component {
     render() {
@@ -9,10 +10,10 @@ class Login extends Component {
             <CenteredDiv>
                 <h1>Login</h1>
                 <form>
-                    <label htmlFor="email">Enter your email:</label><br />
+                    <FormLabel htmlFor="email">Your Email:</FormLabel><br />
                     <FormInput id="email" type="text" /><br /><br />
 
-                    <label htmlFor="password">Enter your password:</label><br />
+                    <FormLabel htmlFor="password">Your Password:</FormLabel><br />
                     <FormInput id="password" type="password" /><br /><br />
 
                     <SubmitButton type="submit">Login</SubmitButton>
