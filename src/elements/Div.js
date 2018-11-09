@@ -8,7 +8,7 @@ export const CenteredDiv = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     z-index: 1000;
     display: flex;

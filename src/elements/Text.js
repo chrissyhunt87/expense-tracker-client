@@ -6,3 +6,8 @@ export const FormLabel = styled.label`
     text-align: center;
     text-transform: uppercase;
 `;
+
+export const SubtleP = styled.p`
+    font-size: 0.7em;
+    opacity: 0.6em;
+`;

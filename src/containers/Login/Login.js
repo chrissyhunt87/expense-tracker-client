@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { CenteredDiv } from '../../elements/Div';
 import { FormInput } from '../../elements/Input';
 import { SubmitButton } from '../../elements/Button';
-import { FormLabel } from '../../elements/Text';
+import { FormLabel, SubtleP } from '../../elements/Text';
 
 class Login extends Component {
     render() {
@@ -18,6 +18,7 @@ class Login extends Component {
 
                     <SubmitButton type="submit">Login</SubmitButton>
                 </form>
+                <SubtleP>(Or click here to create account.)</SubtleP>
             </CenteredDiv>
         )
     }
