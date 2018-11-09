@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 import Expenses from './Expenses';
 
 describe('Expenses component', () => {
@@ -13,5 +13,10 @@ describe('Expenses component', () => {
     it('should render correctly in "debug" mode', () => {
         const component = shallow(<Expenses debug />);
         expect(component).toMatchSnapshot();
+    })
+
+    it('should show correct header text', () => {
+        const wrapper = shallow(<Expenses />);
+        expect(wrapper.find('h1').text("Hello, Chrissy!"));
     })
 });
