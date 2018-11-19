@@ -25,12 +25,12 @@ class Question extends Component {
 
     render() {
         // TODO: Might selectively render button type if answer === selectedAnswer
-        const buttons = this.state.possibleAnswers.map((answer, index) => <button key={index} onClick={this.handleClick}>{answer}</button>);
+        const answerButtons = this.state.possibleAnswers.map((answer, index) => <button key={index} onClick={this.handleClick}>{answer}</button>);
 
         return (
             <div>
                 <p>{this.state.questionText}</p>   
-                {buttons}
+                {answerButtons}
             </div>
         )
     }

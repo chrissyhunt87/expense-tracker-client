@@ -5,6 +5,7 @@ import Home from './Home';
 import Login from './containers/Login/Login';
 import Expenses from './containers/Expenses/Expenses';
 import Question from './Question/Question';
+import Multi from './Question/Multi';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/expenses" component={Expenses} />
           <Route path="/question" component={Question} />
+          <Route path="/multi" component={Multi} />
         </React.Fragment>
       </Router>
     );
